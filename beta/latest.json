@@ -1,27 +1,27 @@
 {
-  "version": "0.0.0-beta.1",
-  "notes": "Initial beta release placeholder",
-  "pub_date": "2025-01-01T00:00:00Z",
+  "version": "0.6.0-beta.1",
+  "notes": "### Added\r\n- Tauri v2 updater system with multi-channel support\r\n- Automated CI/CD workflows for cross-platform builds\r\n- Public repository structure for signed releases\r\n- Update metadata generation system\r\n- GitHub Pages hosting for update endpoints\r\n\r\n### Changed\r\n- Enhanced security with cryptographic signing\r\n- Improved build process with channel-specific configurations\r\n- Updated deployment pipeline for automated releases\r\n\r\n### Fixed\r\n- Resolved update verification and signature handling\r\n- Fixed cross-platform compatibility issues",
+  "pub_date": "2025-12-14T21:19:13.295Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "",
-      "url": "https://github.com/iptoux/cli-official/releases/download/beta/cli-grid-runner_0.0.0-beta.1_x64_en-US.msi",
-      "size": 0
+      "signature": "placeholder_signature_Su0effUJrb3Q2kl2emlmNO3ribeUZfE0ZY9w7ICX9tU=",
+      "url": "https://github.com/iptoux/cli-official/releases/download/beta/cli-grid-runner_0.6.0-beta.1_x64_en-US.msi",
+      "size": 26354141
     },
     "darwin-x86_64": {
-      "signature": "",
-      "url": "https://github.com/iptoux/cli-official/releases/download/beta/cli-grid-runner_0.0.0-beta.1_x64.dmg",
-      "size": 0
+      "signature": "placeholder_signature_a5CccaR7fTNK+Fi1ZMIauajL8jm5XLvGuN7Lt4PWSiE=",
+      "url": "https://github.com/iptoux/cli-official/releases/download/beta/cli-grid-runner_0.6.0-beta.1_x64.dmg",
+      "size": 33341466
     },
     "darwin-aarch64": {
-      "signature": "",
-      "url": "https://github.com/iptoux/cli-official/releases/download/beta/cli-grid-runner_0.0.0-beta.1_aarch64.dmg",
-      "size": 0
+      "signature": "placeholder_signature_JvsMkFDzJDewcGitq0IkgKWvHuMZ3Qzp+gZZ9Hch/U8=",
+      "url": "https://github.com/iptoux/cli-official/releases/download/beta/cli-grid-runner_0.6.0-beta.1_aarch64.dmg",
+      "size": 28992711
     },
     "linux-x86_64": {
-      "signature": "",
-      "url": "https://github.com/iptoux/cli-official/releases/download/beta/cli-grid-runner_0.0.0-beta.1_amd64.AppImage",
-      "size": 0
+      "signature": "placeholder_signature_Rhi6gVMlujrxc9A/QTxYWeOx6g9tE2Y0BG9S37YZCMs=",
+      "url": "https://github.com/iptoux/cli-official/releases/download/beta/cli-grid-runner_0.6.0-beta.1_amd64.AppImage",
+      "size": 53593399
     }
   }
 }

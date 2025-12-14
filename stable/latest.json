@@ -1,27 +1,27 @@
 {
-  "version": "0.0.0",
-  "notes": "Initial stable release placeholder",
-  "pub_date": "2025-01-01T00:00:00Z",
+  "version": "0.5.3",
+  "notes": "### Added\r\n- Current stable release of CLI: GRID RUNNER\r\n- Complete TRON-inspired 3D speedrun game\r\n- First-person perspective with dynamic path navigation\r\n- Combat system with discs, towers, and recognizers\r\n- Arena system with dynamic wall construction\r\n- Health and damage system with visual feedback\r\n- Three difficulty levels with progressive challenge\r\n- Speedrun mode with local leaderboard\r\n- 3D holographic minimap with real-time updates\r\n- Comprehensive audio system with positional effects\r\n\r\n### Technical Features\r\n- Built with Tauri v2 for cross-platform desktop deployment\r\n- React 19 frontend with TypeScript for type safety\r\n- Three.js v0.169.0 for high-performance 3D rendering\r\n- Modular architecture with 30+ focused modules\r\n- Comprehensive property-based testing suite\r\n- Performance optimizations including material caching and instanced rendering\r\n\r\n### Platforms\r\n- Windows (x64)\r\n- macOS (Intel and Apple Silicon)\r\n- Linux (x64 AppImage)",
+  "pub_date": "2025-12-14T21:19:07.191Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "",
-      "url": "https://github.com/iptoux/cli-official/releases/download/stable/cli-grid-runner_0.0.0_x64_en-US.msi",
-      "size": 0
+      "signature": "placeholder_signature_AcJSXJNXPIajK76TpJB1wjtVq2YK6OEOXZs31av8eFE=",
+      "url": "https://github.com/iptoux/cli-official/releases/download/stable/cli-grid-runner_0.5.3_x64_en-US.msi",
+      "size": 58139245
     },
     "darwin-x86_64": {
-      "signature": "",
-      "url": "https://github.com/iptoux/cli-official/releases/download/stable/cli-grid-runner_0.0.0_x64.dmg",
-      "size": 0
+      "signature": "placeholder_signature_B3X2iquG+Nfur5XSYL+uPDHOgwRw5zqiOFIRUASa+Ao=",
+      "url": "https://github.com/iptoux/cli-official/releases/download/stable/cli-grid-runner_0.5.3_x64.dmg",
+      "size": 17415013
     },
     "darwin-aarch64": {
-      "signature": "",
-      "url": "https://github.com/iptoux/cli-official/releases/download/stable/cli-grid-runner_0.0.0_aarch64.dmg",
-      "size": 0
+      "signature": "placeholder_signature_7hqOOc8nTq4ap25NJrsfMq9reFKRh5O6Ezb4IDQlvHU=",
+      "url": "https://github.com/iptoux/cli-official/releases/download/stable/cli-grid-runner_0.5.3_aarch64.dmg",
+      "size": 30253716
     },
     "linux-x86_64": {
-      "signature": "",
-      "url": "https://github.com/iptoux/cli-official/releases/download/stable/cli-grid-runner_0.0.0_amd64.AppImage",
-      "size": 0
+      "signature": "placeholder_signature_9Yss2DXooOE0zf18x2qntPwd/rXeqZDb72372NjLwZI=",
+      "url": "https://github.com/iptoux/cli-official/releases/download/stable/cli-grid-runner_0.5.3_amd64.AppImage",
+      "size": 11407630
     }
   }
 }

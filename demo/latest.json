@@ -1,27 +1,27 @@
 {
-  "version": "0.0.0-demo.1",
-  "notes": "Initial demo release placeholder",
-  "pub_date": "2025-01-01T00:00:00Z",
+  "version": "0.5.0-demo.1",
+  "notes": "Demo version for testing and evaluation",
+  "pub_date": "2025-12-14T21:18:22.808Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "",
-      "url": "https://github.com/iptoux/cli-official/releases/download/demo/cli-grid-runner_0.0.0-demo.1_x64_en-US.msi",
-      "size": 0
+      "signature": "placeholder_signature_M3PCMkUOVvU5/+dePVumWp42xlNwFhkqBftx89dUmsI=",
+      "url": "https://github.com/iptoux/cli-official/releases/download/demo/cli-grid-runner_0.5.0-demo.1_x64_en-US.msi",
+      "size": 12893888
     },
     "darwin-x86_64": {
-      "signature": "",
-      "url": "https://github.com/iptoux/cli-official/releases/download/demo/cli-grid-runner_0.0.0-demo.1_x64.dmg",
-      "size": 0
+      "signature": "placeholder_signature_FDoAo76MqrILKqX7/6mb5uIcdOomhwW0l7pGqYY4Ioc=",
+      "url": "https://github.com/iptoux/cli-official/releases/download/demo/cli-grid-runner_0.5.0-demo.1_x64.dmg",
+      "size": 42754291
     },
     "darwin-aarch64": {
-      "signature": "",
-      "url": "https://github.com/iptoux/cli-official/releases/download/demo/cli-grid-runner_0.0.0-demo.1_aarch64.dmg",
-      "size": 0
+      "signature": "placeholder_signature_8L8H0kSUdPzrzUR1mTz1o9alxmkGOwL/sAe1keFsOL4=",
+      "url": "https://github.com/iptoux/cli-official/releases/download/demo/cli-grid-runner_0.5.0-demo.1_aarch64.dmg",
+      "size": 57105600
     },
     "linux-x86_64": {
-      "signature": "",
-      "url": "https://github.com/iptoux/cli-official/releases/download/demo/cli-grid-runner_0.0.0-demo.1_amd64.AppImage",
-      "size": 0
+      "signature": "placeholder_signature_G8xTxEbg4WMdTxwX0TazX3F092dhrBCz97mc6pcIJDA=",
+      "url": "https://github.com/iptoux/cli-official/releases/download/demo/cli-grid-runner_0.5.0-demo.1_amd64.AppImage",
+      "size": 13574003
     }
   }
 }
