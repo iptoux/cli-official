@@ -1,0 +1,48 @@
+# GitHub Pages configuration for CLI: GRID RUNNER update endpoints
+# This configuration ensures proper CORS headers and security for update metadata
+
+# Basic Jekyll configuration
+title: "CLI: GRID RUNNER - Update Endpoints"
+description: "Official update endpoints for CLI: GRID RUNNER Tauri application"
+url: "https://iptoux.github.io"
+baseurl: "/cli-official"
+
+# Plugins for GitHub Pages
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Security headers and CORS configuration
+# These will be applied through GitHub Pages and custom headers
+include:
+  - "_headers"
+  - "*.json"
+
+# Exclude unnecessary files from the site
+exclude:
+  - README.md
+  - .git
+  - .gitignore
+  - node_modules
+  - package*.json
+  - "*.log"
+
+# Markdown configuration
+markdown: kramdown
+highlighter: rouge
+
+# Collections for better organization
+collections:
+  channels:
+    output: false
+
+# Default layout for JSON files
+defaults:
+  - scope:
+      path: "*/latest.json"
+    values:
+      layout: null
+      sitemap: false
+
+# Enable safe mode for security
+safe: true

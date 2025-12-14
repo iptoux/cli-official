@@ -1,0 +1,57 @@
+# Headers configuration for CLI: GRID RUNNER update endpoints
+# This file configures CORS and security headers for GitHub Pages
+
+# Global headers for all files
+/*
+  # Security headers
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  
+  # Cache control for general files
+  Cache-Control: public, max-age=3600
+
+# Specific headers for update metadata JSON files
+/*/latest.json
+  # CORS headers for Tauri updater
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+  Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With
+  Access-Control-Max-Age: 86400
+  
+  # Content type for JSON
+  Content-Type: application/json; charset=utf-8
+  
+  # Cache control for update metadata (shorter cache for frequent updates)
+  Cache-Control: public, max-age=300, must-revalidate
+  
+  # Security headers
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# Headers for release artifacts
+/*/windows/*
+  Content-Type: application/octet-stream
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+/*/macos/*
+  Content-Type: application/octet-stream
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+/*/linux/*
+  Content-Type: application/octet-stream
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+# Headers for the root directory and README
+/
+  Cache-Control: public, max-age=3600
+
+/README.md
+  Content-Type: text/markdown; charset=utf-8
+  Cache-Control: public, max-age=3600

@@ -1,0 +1,35 @@
+{
+  "status": "healthy",
+  "service": "CLI: GRID RUNNER Update Endpoints",
+  "version": "1.0.0",
+  "timestamp": "2025-12-14T21:19:07.191Z",
+  "endpoints": {
+    "stable": {
+      "url": "https://iptoux.github.io/cli-official/stable/latest.json",
+      "description": "Stable release channel endpoint"
+    },
+    "beta": {
+      "url": "https://iptoux.github.io/cli-official/beta/latest.json", 
+      "description": "Beta release channel endpoint"
+    },
+    "demo": {
+      "url": "https://iptoux.github.io/cli-official/demo/latest.json",
+      "description": "Demo release channel endpoint"
+    }
+  },
+  "monitoring": {
+    "health_check_url": "https://iptoux.github.io/cli-official/health.json",
+    "last_updated": "2025-12-14T21:19:07.191Z",
+    "uptime_monitors": [
+      "GitHub Pages status",
+      "CDN availability",
+      "CORS configuration"
+    ]
+  },
+  "security": {
+    "cors_enabled": true,
+    "https_only": true,
+    "content_security": "enabled",
+    "signature_verification": "required"
+  }
+}

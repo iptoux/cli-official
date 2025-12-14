@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLI: GRID RUNNER - Update Endpoints</title>
+    <meta name="description" content="Official update endpoints for CLI: GRID RUNNER Tauri application">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Security headers via meta tags -->
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+            color: #333;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .endpoint {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .endpoint h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .url {
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 4px;
+            border-left: 4px solid #007bff;
+            word-break: break-all;
+        }
+        .status {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .status.active {
+            background: #d4edda;
+            color: #155724;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            font-size: 14px;
+            color: #666;
+        }
+        .health-check {
+            margin-top: 20px;
+        }
+        .health-check a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .health-check a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>CLI: GRID RUNNER</h1>
+        <h2>Update Endpoints</h2>
+        <p>Official Tauri updater endpoints served via GitHub Pages</p>
+    </div>
+
+    <div class="endpoint">
+        <h3>Stable Channel <span class="status active">Active</span></h3>
+        <p>Production-ready releases, thoroughly tested and stable. Recommended for general users.</p>
+        <div class="url">
+            <strong>Endpoint:</strong> https://iptoux.github.io/cli-official/stable/latest.json
+        </div>
+    </div>
+
+    <div class="endpoint">
+        <h3>Beta Channel <span class="status active">Active</span></h3>
+        <p>Pre-release versions for testing new features. Recommended for testers and early adopters.</p>
+        <div class="url">
+            <strong>Endpoint:</strong> https://iptoux.github.io/cli-official/beta/latest.json
+        </div>
+    </div>
+
+    <div class="endpoint">
+        <h3>Demo Channel <span class="status active">Active</span></h3>
+        <p>Demo versions with limited functionality. Used for demonstrations and trials.</p>
+        <div class="url">
+            <strong>Endpoint:</strong> https://iptoux.github.io/cli-official/demo/latest.json
+        </div>
+    </div>
+
+    <div class="endpoint health-check">
+        <h3>Health Check</h3>
+        <p>Monitor endpoint availability and configuration.</p>
+        <div class="url">
+            <strong>Health Endpoint:</strong> <a href="health.json">https://iptoux.github.io/cli-official/health.json</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><strong>Security Features:</strong></p>
+        <ul style="text-align: left; display: inline-block;">
+            <li>HTTPS-only endpoints with proper CORS headers</li>
+            <li>Cryptographic signature verification for all releases</li>
+            <li>Platform-specific code signing (Windows PFX, macOS certificates)</li>
+            <li>Content Security Policy and security headers</li>
+        </ul>
+        
+        <p style="margin-top: 20px;">
+            <small>
+                This repository is automatically updated by CI/CD pipeline.<br>
+                Last updated: <span id="timestamp">Loading...</span>
+            </small>
+        </p>
+    </div>
+
+    <script>
+        // Load and display health check timestamp
+        fetch('health.json')
+            .then(response => response.json())
+            .then(data => {
+                const timestamp = new Date(data.timestamp).toLocaleString();
+                document.getElementById('timestamp').textContent = timestamp;
+            })
+            .catch(error => {
+                document.getElementById('timestamp').textContent = 'Unknown';
+            });
+    </script>
+</body>
+</html>
