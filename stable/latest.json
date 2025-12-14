@@ -1,0 +1,27 @@
+{
+  "version": "0.0.0",
+  "notes": "Initial stable release placeholder",
+  "pub_date": "2025-01-01T00:00:00Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "",
+      "url": "https://github.com/iptoux/cli-official/releases/download/stable/cli-grid-runner_0.0.0_x64_en-US.msi",
+      "size": 0
+    },
+    "darwin-x86_64": {
+      "signature": "",
+      "url": "https://github.com/iptoux/cli-official/releases/download/stable/cli-grid-runner_0.0.0_x64.dmg",
+      "size": 0
+    },
+    "darwin-aarch64": {
+      "signature": "",
+      "url": "https://github.com/iptoux/cli-official/releases/download/stable/cli-grid-runner_0.0.0_aarch64.dmg",
+      "size": 0
+    },
+    "linux-x86_64": {
+      "signature": "",
+      "url": "https://github.com/iptoux/cli-official/releases/download/stable/cli-grid-runner_0.0.0_amd64.AppImage",
+      "size": 0
+    }
+  }
+}
