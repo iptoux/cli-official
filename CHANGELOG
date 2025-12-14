@@ -1,0 +1,59 @@
+## [Unreleased]
+
+- Added Tauri plugin-opener integration and improved version management.
+- Enhanced Tauri v2 environment detection with better error handling for a smoother experience.
+- Updated the application to version 0.5.3, rebranding it with improved branding elements.
+
+## [v0.5.3] - 2025-12-14
+
+- Integrated Tauri plugin-opener and bumped the version number for enhanced compatibility.
+- Improved environment detection in the Tauri v2 system, reducing errors during startup.
+- Updated application to version 0.5.3, rebranding it with a fresh look and feel.
+
+## [v0.5.2] - 2025-12-14
+
+- Fixed issues with Tauri-based persistence layer retrieval for legacy data without JSON parsing.
+- Implemented a more robust Tauri-based persistence layer that combines hybrid storage capabilities for better efficiency.
+
+## [v0.5.1] - 2025-12-14
+
+- Adjusted Phase Shift position in the Orbiting Models to improve visibility and user experience.
+
+## [v0.5.0] - 2025-12-14
+
+- Enhanced EMP settings with customizable radius, visual radius, and speed attributes for better gameplay control.
+- Improved pause dialog instructions and removed automatic resume on escape key press for a more deliberate gaming experience.
+- Replaced portal audio effects with new sky ship spawn sounds, removing unused effects for cleaner audio management.
+- Updated tower spawning logic to use level configurations for max towers and levels limits, streamlining deployment processes.
+- Simplified shield bar transitions for improved performance and visual appeal.
+- Rounded player health values for a cleaner UI display, reducing confusion during gameplay.
+- Adjusted shield recharge rates and tower parameters for balanced gameplay that keeps matches exciting and unpredictable.
+- Added glow effects for hacked and disabled towers with new colors and pulsing animations to differentiate between different types of adversaries.
+- Enhanced visuals for hacked and disabled towers by adjusting opacity and managing glow states effectively, making them more noticeable on the battlefield.
+- Prevented EMP from occluding objects behind it by disabling depth write, ensuring clear visibility during critical moments in combat.
+- Added a team-specific color parameter for EMP explosions to help players identify the origin of these powerful attacks quickly.
+- Implemented infinite ammo toggle and updated related mechanics to offer players more strategic options during intense battles.
+- Introduced visual effects for hacked towers with glow and color updates to signify their altered state dynamically.
+- Implemented EMP and Hack Spike mechanics with comprehensive state management, allowing for a more immersive and challenging gameplay experience.
+- Added last hit direction prop to the Game component, providing valuable feedback on enemy movements and attacks.
+
+## [v0.4.0] - 2025-12-12
+
+- Refactored MenuMusic by moving context to a separate file and updating imports for better modularity and maintainability.
+- Redesigned SystemArchives layout and display of version information, enhancing user understanding of game updates.
+- Enhanced UI components across SystemArchives, TeamSelectionDialog, and others, improving consistency and aesthetic appeal.
+- Implemented Context for music control within MenuMusic, Home, and Game components, offering a more seamless audio experience.
+- Integrated BackgroundEffects component into SystemArchives to provide enhanced visual feedback during gameplay.
+- Adjusted tooltip positioning and spacing in OrbitingModels and TeamSelectionDialog, ensuring better visibility and interaction with UI elements.
+- Enhanced Model Tooltips across SystemArchives and TeamSelectionDialog, along with adding navigation buttons for improved user navigation within the interface.
+- Renamed CornerModels to OrbitingModels and updated their layout for improved consistency and usability across the application.
+
+## [v0.3.0] - 2025-12-12
+
+- Expanded copilot instructions and updated steering documentation for better onboarding and support.
+- Added comprehensive unit tests for utility functions and weapon systems, ensuring code reliability and performance stability.
+- Introduced a new sky ship spawn sound in audio settings, replacing old portal effects for a more immersive auditory experience.
+- Updated tower hit hack sounds and integrated them into game logic, enhancing the feedback players receive during combat encounters.
+- Slowed down the rotation speed of Hack Spike rings while adjusting their animations, improving visual clarity and gameplay enjoyment.
+- Updated geometry and materials for Tower and User models, increasing visual fidelity and realism in-game.
+- Added 3D preview components for both Tower and User models to aid in spatial understanding and strategic planning within the game.
